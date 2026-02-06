@@ -1,0 +1,12 @@
+[project]
+name = "test-target-2"
+version = "0.1.0"
+description = "A minimal Python utility library for auto-dev-mcp integration testing"
+requires-python = ">=3.11"
+
+[build-system]
+requires = ["uv_build>=0.9.21,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = ["pytest", "ruff", "mypy"]
