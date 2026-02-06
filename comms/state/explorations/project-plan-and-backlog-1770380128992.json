@@ -1,14 +1,17 @@
 {
   "exploration_id": "project-plan-and-backlog-1770380128992",
   "results_folder": "project-plan-and-backlog",
-  "status": "running",
+  "status": "complete",
   "pid": 18348,
   "started_at": "2026-02-06T12:15:28.992904",
-  "updated_at": "2026-02-06T12:15:30.791126",
-  "completed_at": null,
+  "updated_at": "2026-02-06T12:18:54.728198",
+  "completed_at": "2026-02-06T12:18:54.727837",
   "error": null,
-  "documents": [],
-  "committed": false,
+  "documents": [
+    "README.md",
+    "backlog-summary.md"
+  ],
+  "committed": true,
   "commit_error": null,
   "prompt_path": "comms/inbox/exploration/project-plan-and-backlog/prompt.md",
   "outbox_path": "comms/outbox/exploration/project-plan-and-backlog"
