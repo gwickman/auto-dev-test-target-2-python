@@ -1,0 +1,20 @@
+{
+  "exploration_id": "design-v001-008-validation-1770388547014",
+  "results_folder": "design-v001-008-validation",
+  "status": "complete",
+  "pid": 18348,
+  "started_at": "2026-02-06T14:35:47.014512",
+  "updated_at": "2026-02-06T14:40:36.712240",
+  "completed_at": "2026-02-06T14:40:36.711892",
+  "error": null,
+  "documents": [
+    "README.md",
+    "discrepancies.md",
+    "pre-execution-checklist.md",
+    "validation-details.md"
+  ],
+  "committed": false,
+  "commit_error": "Commit failed: error: invalid path 'nul'\nerror: unable to add 'nul' to index\nfatal: adding files failed\n",
+  "prompt_path": "comms/inbox/exploration/design-v001-008-validation/prompt.md",
+  "outbox_path": "comms/outbox/exploration/design-v001-008-validation"
+}

@@ -1,0 +1,19 @@
+{
+  "exploration_id": "design-v001-007-persist-1770388117961",
+  "results_folder": "design-v001-007-persist",
+  "status": "complete",
+  "pid": 18348,
+  "started_at": "2026-02-06T14:28:37.961208",
+  "updated_at": "2026-02-06T14:32:49.625619",
+  "completed_at": "2026-02-06T14:32:49.625308",
+  "error": null,
+  "documents": [
+    "README.md",
+    "persistence-log.md",
+    "verification-checklist.md"
+  ],
+  "committed": false,
+  "commit_error": "Commit failed: error: invalid path 'nul'\nerror: unable to add 'nul' to index\nfatal: adding files failed\n",
+  "prompt_path": "comms/inbox/exploration/design-v001-007-persist/prompt.md",
+  "outbox_path": "comms/outbox/exploration/design-v001-007-persist"
+}
