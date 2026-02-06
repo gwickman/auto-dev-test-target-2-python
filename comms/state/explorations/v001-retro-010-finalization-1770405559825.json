@@ -1,0 +1,18 @@
+{
+  "exploration_id": "v001-retro-010-finalization-1770405559825",
+  "results_folder": "v001-retro-010-finalization",
+  "status": "complete",
+  "pid": 21716,
+  "started_at": "2026-02-06T19:19:19.825052",
+  "updated_at": "2026-02-06T19:21:04.206356",
+  "completed_at": "2026-02-06T19:21:04.205980",
+  "error": null,
+  "documents": [
+    "README.md",
+    "final-summary.md"
+  ],
+  "committed": false,
+  "commit_error": "Commit failed: error: invalid path 'nul'\nerror: unable to add 'nul' to index\nfatal: adding files failed\n",
+  "prompt_path": "comms/inbox/exploration/v001-retro-010-finalization/prompt.md",
+  "outbox_path": "comms/outbox/exploration/v001-retro-010-finalization"
+}

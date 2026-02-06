@@ -1,15 +1,17 @@
 {
   "exploration_id": "v001-retro-remediation-1770405165294",
   "results_folder": "v001-retro-remediation",
-  "status": "running",
+  "status": "complete",
   "pid": 21716,
   "started_at": "2026-02-06T19:12:45.294355",
-  "updated_at": "2026-02-06T19:12:45.439125",
-  "completed_at": null,
+  "updated_at": "2026-02-06T19:14:17.100168",
+  "completed_at": "2026-02-06T19:14:17.099831",
   "error": null,
-  "documents": [],
+  "documents": [
+    "README.md"
+  ],
   "committed": false,
-  "commit_error": null,
+  "commit_error": "Commit failed: error: invalid path 'nul'\nerror: unable to add 'nul' to index\nfatal: adding files failed\n",
   "prompt_path": "comms/inbox/exploration/v001-retro-remediation/prompt.md",
   "outbox_path": "comms/outbox/exploration/v001-retro-remediation"
 }
