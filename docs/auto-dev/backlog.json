@@ -1,15 +1,15 @@
 {
   "next_id": 14,
-  "updated_at": "2026-02-06T12:17:07.533058",
+  "updated_at": "2026-02-06T18:58:27.070576",
   "items": [
     {
       "id": "BL-001",
       "title": "Python project scaffolding (pyproject.toml, src layout, __init__.py)",
       "priority": "P1",
-      "status": "open",
+      "status": "completed",
       "size": "m",
       "added": "2026-02-06T12:16:32.902088",
-      "completed_at": null,
+      "completed_at": "2026-02-06T18:58:21.285863",
       "tags": [
         "v001",
         "foundation"
@@ -35,17 +35,17 @@
       ],
       "notes": null,
       "use_case": "This feature addresses: Python project scaffolding (pyproject.toml, src layout, __init__.py). It improves the system by resolving the described requirement.",
-      "implemented_in_version": null,
-      "implemented_in_theme": null
+      "implemented_in_version": "v001",
+      "implemented_in_theme": "01-project-scaffolding"
     },
     {
       "id": "BL-002",
       "title": "pytest setup with basic passing test",
       "priority": "P1",
-      "status": "open",
+      "status": "completed",
       "size": "m",
       "added": "2026-02-06T12:16:34.951966",
-      "completed_at": null,
+      "completed_at": "2026-02-06T18:58:22.589408",
       "tags": [
         "v001",
         "foundation"
@@ -71,17 +71,17 @@
       ],
       "notes": null,
       "use_case": "This feature addresses: pytest setup with basic passing test. It improves the system by resolving the described requirement.",
-      "implemented_in_version": null,
-      "implemented_in_theme": null
+      "implemented_in_version": "v001",
+      "implemented_in_theme": "02-quality-and-ci"
     },
     {
       "id": "BL-003",
       "title": "ruff configuration (linting + formatting)",
       "priority": "P1",
-      "status": "open",
+      "status": "completed",
       "size": "m",
       "added": "2026-02-06T12:16:37.174917",
-      "completed_at": null,
+      "completed_at": "2026-02-06T18:58:23.723093",
       "tags": [
         "v001",
         "foundation"
@@ -107,17 +107,17 @@
       ],
       "notes": null,
       "use_case": "This feature addresses: ruff configuration (linting + formatting). It improves the system by resolving the described requirement.",
-      "implemented_in_version": null,
-      "implemented_in_theme": null
+      "implemented_in_version": "v001",
+      "implemented_in_theme": "02-quality-and-ci"
     },
     {
       "id": "BL-004",
       "title": "mypy configuration with strict mode",
       "priority": "P1",
-      "status": "open",
+      "status": "completed",
       "size": "m",
       "added": "2026-02-06T12:16:39.173896",
-      "completed_at": null,
+      "completed_at": "2026-02-06T18:58:24.870664",
       "tags": [
         "v001",
         "foundation"
@@ -143,17 +143,17 @@
       ],
       "notes": null,
       "use_case": "This feature addresses: mypy configuration with strict mode. It improves the system by resolving the described requirement.",
-      "implemented_in_version": null,
-      "implemented_in_theme": null
+      "implemented_in_version": "v001",
+      "implemented_in_theme": "02-quality-and-ci"
     },
     {
       "id": "BL-005",
       "title": "GitHub Actions CI workflow (lint, typecheck, test)",
       "priority": "P1",
-      "status": "open",
+      "status": "completed",
       "size": "m",
       "added": "2026-02-06T12:16:41.342490",
-      "completed_at": null,
+      "completed_at": "2026-02-06T18:58:26.013313",
       "tags": [
         "v001",
         "foundation"
@@ -179,17 +179,17 @@
       ],
       "notes": null,
       "use_case": "This feature addresses: GitHub Actions CI workflow (lint, typecheck, test). It improves the system by resolving the described requirement.",
-      "implemented_in_version": null,
-      "implemented_in_theme": null
+      "implemented_in_version": "v001",
+      "implemented_in_theme": "02-quality-and-ci"
     },
     {
       "id": "BL-006",
       "title": "Hello world utility function for quality gate validation",
       "priority": "P1",
-      "status": "open",
+      "status": "completed",
       "size": "m",
       "added": "2026-02-06T12:16:43.357405",
-      "completed_at": null,
+      "completed_at": "2026-02-06T18:58:27.070569",
       "tags": [
         "v001",
         "foundation"
@@ -211,8 +211,8 @@
       ],
       "notes": null,
       "use_case": "This feature addresses: Hello world utility function for quality gate validation. It improves the system by resolving the described requirement.",
-      "implemented_in_version": null,
-      "implemented_in_theme": null
+      "implemented_in_version": "v001",
+      "implemented_in_theme": "01-project-scaffolding"
     },
     {
       "id": "BL-007",
@@ -468,6 +468,6 @@
       "implemented_in_theme": null
     }
   ],
-  "completed_count": 0,
+  "completed_count": 6,
   "cancelled_count": 0
 }

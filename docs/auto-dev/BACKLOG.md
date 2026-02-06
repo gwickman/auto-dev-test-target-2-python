@@ -1,15 +1,15 @@
 # Project Backlog
 
-*Last updated: 2026-02-06 12:17*
+*Last updated: 2026-02-06 18:58*
 
-**Total completed:** 0 | **Cancelled:** 0
+**Total completed:** 6 | **Cancelled:** 0
 
 ## Priority Summary
 
 | Priority | Name | Count |
 |----------|------|-------|
 | P0 | Critical | 0 |
-| P1 | High | 6 |
+| P1 | High | 0 |
 | P2 | Medium | 7 |
 | P3 | Low | 0 |
 
@@ -17,12 +17,6 @@
 
 | ID | Pri | Size | Title | Description |
 |----|-----|------|-------|-------------|
-| <a id="bl-001-ref"></a>[BL-001](#bl-001) | P1 | m | Python project scaffolding (pyproject.toml, src layout, __init__.py) | Set up the Python project structure using modern standard... |
-| <a id="bl-002-ref"></a>[BL-002](#bl-002) | P1 | m | pytest setup with basic passing test | Configure pytest as the test framework in pyproject.toml,... |
-| <a id="bl-003-ref"></a>[BL-003](#bl-003) | P1 | m | ruff configuration (linting + formatting) | Configure ruff for both linting and formatting. Set up ru... |
-| <a id="bl-004-ref"></a>[BL-004](#bl-004) | P1 | m | mypy configuration with strict mode | Configure mypy for strict type checking in pyproject.toml... |
-| <a id="bl-005-ref"></a>[BL-005](#bl-005) | P1 | m | GitHub Actions CI workflow (lint, typecheck, test) | Create .github/workflows/ci.yml with a CI pipeline that r... |
-| <a id="bl-006-ref"></a>[BL-006](#bl-006) | P1 | m | Hello world utility function for quality gate validation | Create a simple hello() utility function in src/test_targ... |
 | <a id="bl-007-ref"></a>[BL-007](#bl-007) | P2 | m | String utilities module (slugify, truncate, case_convert, etc.) | Create src/test_target_2/string_utils.py with idiomatic P... |
 | <a id="bl-008-ref"></a>[BL-008](#bl-008) | P2 | m | Math/number utilities module (clamp, lerp, round_to, is_close, etc.) | Create src/test_target_2/math_utils.py with numeric utili... |
 | <a id="bl-009-ref"></a>[BL-009](#bl-009) | P2 | m | Collection utilities module (chunk, flatten, unique_by, group_by, etc.) | Create src/test_target_2/collection_utils.py with collect... |
@@ -35,8 +29,6 @@
 
 | Tag | Count | Items |
 |-----|-------|-------|
-| v001 | 6 | BL-001, BL-002, BL-003, BL-004, ... |
-| foundation | 6 | BL-001, BL-002, BL-003, BL-004, ... |
 | v003 | 4 | BL-010, BL-011, BL-012, BL-013 |
 | validation | 4 | BL-010, BL-011, BL-012, BL-013 |
 | v002 | 3 | BL-007, BL-008, BL-009 |
@@ -44,109 +36,6 @@
 | testing | 1 | BL-013 |
 
 ## Item Details
-
-### P1: High
-
-#### 📋 BL-001: Python project scaffolding (pyproject.toml, src layout, __init__.py)
-
-**Status:** open
-**Tags:** v001, foundation
-
-Set up the Python project structure using modern standards: pyproject.toml with uv as the build tool, src/test_target_2/ package layout with __init__.py, and a basic hello.py module with a hello() function so quality gates have something to run against.
-
-**Use Case:** This feature addresses: Python project scaffolding (pyproject.toml, src layout, __init__.py). It improves the system by resolving the described requirement.
-
-**Acceptance Criteria:**
-- [ ] pyproject.toml exists with project metadata and uv configuration
-- [ ] src/test_target_2/__init__.py exists with version info
-- [ ] src/test_target_2/hello.py exists with a hello() function
-- [ ] Package is installable via uv sync
-
-[↑ Back to list](#bl-001-ref)
-
-#### 📋 BL-002: pytest setup with basic passing test
-
-**Status:** open
-**Tags:** v001, foundation
-
-Configure pytest as the test framework in pyproject.toml, create tests/ directory structure, and write a basic passing test for the hello() function to validate the test pipeline works end-to-end.
-
-**Use Case:** This feature addresses: pytest setup with basic passing test. It improves the system by resolving the described requirement.
-
-**Acceptance Criteria:**
-- [ ] pytest is listed as a dev dependency in pyproject.toml
-- [ ] tests/ directory exists with conftest.py
-- [ ] tests/test_hello.py exists with at least one passing test
-- [ ] uv run pytest passes with green output
-
-[↑ Back to list](#bl-002-ref)
-
-#### 📋 BL-003: ruff configuration (linting + formatting)
-
-**Status:** open
-**Tags:** v001, foundation
-
-Configure ruff for both linting and formatting. Set up ruff.toml or [tool.ruff] in pyproject.toml with sensible defaults: line length 88, Python 3.11+ target, enable standard rule sets (E, F, I, UP, B, SIM).
-
-**Use Case:** This feature addresses: ruff configuration (linting + formatting). It improves the system by resolving the described requirement.
-
-**Acceptance Criteria:**
-- [ ] ruff is listed as a dev dependency
-- [ ] ruff configuration exists with line-length, target-version, and rule selections
-- [ ] uv run ruff check src/ passes cleanly
-- [ ] uv run ruff format --check src/ passes cleanly
-
-[↑ Back to list](#bl-003-ref)
-
-#### 📋 BL-004: mypy configuration with strict mode
-
-**Status:** open
-**Tags:** v001, foundation
-
-Configure mypy for strict type checking in pyproject.toml. Enable strict mode, set Python 3.11+ target, and ensure the hello module passes strict type checking with proper type annotations.
-
-**Use Case:** This feature addresses: mypy configuration with strict mode. It improves the system by resolving the described requirement.
-
-**Acceptance Criteria:**
-- [ ] mypy is listed as a dev dependency
-- [ ] [tool.mypy] section exists in pyproject.toml with strict = true
-- [ ] uv run mypy src/ passes cleanly
-- [ ] All public functions have type annotations
-
-[↑ Back to list](#bl-004-ref)
-
-#### 📋 BL-005: GitHub Actions CI workflow (lint, typecheck, test)
-
-**Status:** open
-**Tags:** v001, foundation
-
-Create .github/workflows/ci.yml with a CI pipeline that runs on push and PR to main. Jobs: ruff check, ruff format --check, mypy src/, pytest. Use uv for dependency management and Python 3.11+.
-
-**Use Case:** This feature addresses: GitHub Actions CI workflow (lint, typecheck, test). It improves the system by resolving the described requirement.
-
-**Acceptance Criteria:**
-- [ ] .github/workflows/ci.yml exists
-- [ ] Workflow triggers on push and pull_request to main
-- [ ] Workflow runs ruff check, ruff format --check, mypy, and pytest
-- [ ] Workflow uses uv for Python environment setup
-
-[↑ Back to list](#bl-005-ref)
-
-#### 📋 BL-006: Hello world utility function for quality gate validation
-
-**Status:** open
-**Tags:** v001, foundation
-
-Create a simple hello() utility function in src/test_target_2/hello.py that returns a greeting string. This provides the minimal code needed for all quality gates (ruff, mypy, pytest) to have something meaningful to run against.
-
-**Use Case:** This feature addresses: Hello world utility function for quality gate validation. It improves the system by resolving the described requirement.
-
-**Acceptance Criteria:**
-- [ ] hello() function exists with proper type annotations
-- [ ] Function is importable from test_target_2 package
-- [ ] All quality gates pass against this function
-
-[↑ Back to list](#bl-006-ref)
 
 ### P2: Medium
 
