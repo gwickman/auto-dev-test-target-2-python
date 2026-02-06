@@ -1,0 +1,18 @@
+{
+  "exploration_id": "v001-retro-001-environment-1770403835686",
+  "results_folder": "v001-retro-001-environment",
+  "status": "complete",
+  "pid": 21716,
+  "started_at": "2026-02-06T18:50:35.686299",
+  "updated_at": "2026-02-06T18:52:34.374743",
+  "completed_at": "2026-02-06T18:52:34.374356",
+  "error": null,
+  "documents": [
+    "README.md",
+    "environment-report.md"
+  ],
+  "committed": false,
+  "commit_error": "Commit failed: error: invalid path 'nul'\nerror: unable to add 'nul' to index\nfatal: adding files failed\n",
+  "prompt_path": "comms/inbox/exploration/v001-retro-001-environment/prompt.md",
+  "outbox_path": "comms/outbox/exploration/v001-retro-001-environment"
+}

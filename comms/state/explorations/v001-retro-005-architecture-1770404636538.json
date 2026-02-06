@@ -1,0 +1,17 @@
+{
+  "exploration_id": "v001-retro-005-architecture-1770404636538",
+  "results_folder": "v001-retro-005-architecture",
+  "status": "complete",
+  "pid": 21716,
+  "started_at": "2026-02-06T19:03:56.538294",
+  "updated_at": "2026-02-06T19:05:45.218539",
+  "completed_at": "2026-02-06T19:05:45.218224",
+  "error": null,
+  "documents": [
+    "README.md"
+  ],
+  "committed": false,
+  "commit_error": "Commit failed: error: invalid path 'nul'\nerror: unable to add 'nul' to index\nfatal: adding files failed\n",
+  "prompt_path": "comms/inbox/exploration/v001-retro-005-architecture/prompt.md",
+  "outbox_path": "comms/outbox/exploration/v001-retro-005-architecture"
+}

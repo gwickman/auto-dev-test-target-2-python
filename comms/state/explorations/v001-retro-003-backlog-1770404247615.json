@@ -1,0 +1,18 @@
+{
+  "exploration_id": "v001-retro-003-backlog-1770404247615",
+  "results_folder": "v001-retro-003-backlog",
+  "status": "complete",
+  "pid": 21716,
+  "started_at": "2026-02-06T18:57:27.615997",
+  "updated_at": "2026-02-06T18:59:46.908578",
+  "completed_at": "2026-02-06T18:59:46.908256",
+  "error": null,
+  "documents": [
+    "README.md",
+    "backlog-report.md"
+  ],
+  "committed": false,
+  "commit_error": "Commit failed: error: invalid path 'nul'\nerror: unable to add 'nul' to index\nfatal: adding files failed\n",
+  "prompt_path": "comms/inbox/exploration/v001-retro-003-backlog/prompt.md",
+  "outbox_path": "comms/outbox/exploration/v001-retro-003-backlog"
+}

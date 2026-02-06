@@ -1,0 +1,18 @@
+{
+  "exploration_id": "v001-retro-006-learnings-1770404656442",
+  "results_folder": "v001-retro-006-learnings",
+  "status": "complete",
+  "pid": 21716,
+  "started_at": "2026-02-06T19:04:16.442414",
+  "updated_at": "2026-02-06T19:07:30.629560",
+  "completed_at": "2026-02-06T19:07:30.629002",
+  "error": null,
+  "documents": [
+    "README.md",
+    "learnings-detail.md"
+  ],
+  "committed": false,
+  "commit_error": "Commit failed: error: invalid path 'nul'\nerror: unable to add 'nul' to index\nfatal: adding files failed\n",
+  "prompt_path": "comms/inbox/exploration/v001-retro-006-learnings/prompt.md",
+  "outbox_path": "comms/outbox/exploration/v001-retro-006-learnings"
+}
