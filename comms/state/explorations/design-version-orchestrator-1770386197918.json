@@ -1,15 +1,18 @@
 {
   "exploration_id": "design-version-orchestrator-1770386197918",
   "results_folder": "design-version-orchestrator",
-  "status": "running",
+  "status": "complete",
   "pid": 18348,
   "started_at": "2026-02-06T13:56:37.918474",
-  "updated_at": "2026-02-06T13:56:40.006387",
-  "completed_at": null,
+  "updated_at": "2026-02-06T14:44:12.319314",
+  "completed_at": "2026-02-06T14:44:12.318950",
   "error": null,
-  "documents": [],
+  "documents": [
+    "README.md",
+    "orchestration-log.md"
+  ],
   "committed": false,
-  "commit_error": null,
+  "commit_error": "Commit failed: error: short read while indexing nul\nerror: nul: failed to insert into database\nerror: unable to index file 'nul'\nfatal: adding files failed\n",
   "prompt_path": "comms/inbox/exploration/design-version-orchestrator/prompt.md",
   "outbox_path": "comms/outbox/exploration/design-version-orchestrator"
 }
