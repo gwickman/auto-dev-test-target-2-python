@@ -1,0 +1,473 @@
+{
+  "next_id": 14,
+  "updated_at": "2026-02-06T12:17:07.533058",
+  "items": [
+    {
+      "id": "BL-001",
+      "title": "Python project scaffolding (pyproject.toml, src layout, __init__.py)",
+      "priority": "P1",
+      "status": "open",
+      "size": "m",
+      "added": "2026-02-06T12:16:32.902088",
+      "completed_at": null,
+      "tags": [
+        "v001",
+        "foundation"
+      ],
+      "description": "Set up the Python project structure using modern standards: pyproject.toml with uv as the build tool, src/test_target_2/ package layout with __init__.py, and a basic hello.py module with a hello() function so quality gates have something to run against.",
+      "acceptance_criteria": [
+        {
+          "text": "pyproject.toml exists with project metadata and uv configuration",
+          "done": false
+        },
+        {
+          "text": "src/test_target_2/__init__.py exists with version info",
+          "done": false
+        },
+        {
+          "text": "src/test_target_2/hello.py exists with a hello() function",
+          "done": false
+        },
+        {
+          "text": "Package is installable via uv sync",
+          "done": false
+        }
+      ],
+      "notes": null,
+      "use_case": "This feature addresses: Python project scaffolding (pyproject.toml, src layout, __init__.py). It improves the system by resolving the described requirement.",
+      "implemented_in_version": null,
+      "implemented_in_theme": null
+    },
+    {
+      "id": "BL-002",
+      "title": "pytest setup with basic passing test",
+      "priority": "P1",
+      "status": "open",
+      "size": "m",
+      "added": "2026-02-06T12:16:34.951966",
+      "completed_at": null,
+      "tags": [
+        "v001",
+        "foundation"
+      ],
+      "description": "Configure pytest as the test framework in pyproject.toml, create tests/ directory structure, and write a basic passing test for the hello() function to validate the test pipeline works end-to-end.",
+      "acceptance_criteria": [
+        {
+          "text": "pytest is listed as a dev dependency in pyproject.toml",
+          "done": false
+        },
+        {
+          "text": "tests/ directory exists with conftest.py",
+          "done": false
+        },
+        {
+          "text": "tests/test_hello.py exists with at least one passing test",
+          "done": false
+        },
+        {
+          "text": "uv run pytest passes with green output",
+          "done": false
+        }
+      ],
+      "notes": null,
+      "use_case": "This feature addresses: pytest setup with basic passing test. It improves the system by resolving the described requirement.",
+      "implemented_in_version": null,
+      "implemented_in_theme": null
+    },
+    {
+      "id": "BL-003",
+      "title": "ruff configuration (linting + formatting)",
+      "priority": "P1",
+      "status": "open",
+      "size": "m",
+      "added": "2026-02-06T12:16:37.174917",
+      "completed_at": null,
+      "tags": [
+        "v001",
+        "foundation"
+      ],
+      "description": "Configure ruff for both linting and formatting. Set up ruff.toml or [tool.ruff] in pyproject.toml with sensible defaults: line length 88, Python 3.11+ target, enable standard rule sets (E, F, I, UP, B, SIM).",
+      "acceptance_criteria": [
+        {
+          "text": "ruff is listed as a dev dependency",
+          "done": false
+        },
+        {
+          "text": "ruff configuration exists with line-length, target-version, and rule selections",
+          "done": false
+        },
+        {
+          "text": "uv run ruff check src/ passes cleanly",
+          "done": false
+        },
+        {
+          "text": "uv run ruff format --check src/ passes cleanly",
+          "done": false
+        }
+      ],
+      "notes": null,
+      "use_case": "This feature addresses: ruff configuration (linting + formatting). It improves the system by resolving the described requirement.",
+      "implemented_in_version": null,
+      "implemented_in_theme": null
+    },
+    {
+      "id": "BL-004",
+      "title": "mypy configuration with strict mode",
+      "priority": "P1",
+      "status": "open",
+      "size": "m",
+      "added": "2026-02-06T12:16:39.173896",
+      "completed_at": null,
+      "tags": [
+        "v001",
+        "foundation"
+      ],
+      "description": "Configure mypy for strict type checking in pyproject.toml. Enable strict mode, set Python 3.11+ target, and ensure the hello module passes strict type checking with proper type annotations.",
+      "acceptance_criteria": [
+        {
+          "text": "mypy is listed as a dev dependency",
+          "done": false
+        },
+        {
+          "text": "[tool.mypy] section exists in pyproject.toml with strict = true",
+          "done": false
+        },
+        {
+          "text": "uv run mypy src/ passes cleanly",
+          "done": false
+        },
+        {
+          "text": "All public functions have type annotations",
+          "done": false
+        }
+      ],
+      "notes": null,
+      "use_case": "This feature addresses: mypy configuration with strict mode. It improves the system by resolving the described requirement.",
+      "implemented_in_version": null,
+      "implemented_in_theme": null
+    },
+    {
+      "id": "BL-005",
+      "title": "GitHub Actions CI workflow (lint, typecheck, test)",
+      "priority": "P1",
+      "status": "open",
+      "size": "m",
+      "added": "2026-02-06T12:16:41.342490",
+      "completed_at": null,
+      "tags": [
+        "v001",
+        "foundation"
+      ],
+      "description": "Create .github/workflows/ci.yml with a CI pipeline that runs on push and PR to main. Jobs: ruff check, ruff format --check, mypy src/, pytest. Use uv for dependency management and Python 3.11+.",
+      "acceptance_criteria": [
+        {
+          "text": ".github/workflows/ci.yml exists",
+          "done": false
+        },
+        {
+          "text": "Workflow triggers on push and pull_request to main",
+          "done": false
+        },
+        {
+          "text": "Workflow runs ruff check, ruff format --check, mypy, and pytest",
+          "done": false
+        },
+        {
+          "text": "Workflow uses uv for Python environment setup",
+          "done": false
+        }
+      ],
+      "notes": null,
+      "use_case": "This feature addresses: GitHub Actions CI workflow (lint, typecheck, test). It improves the system by resolving the described requirement.",
+      "implemented_in_version": null,
+      "implemented_in_theme": null
+    },
+    {
+      "id": "BL-006",
+      "title": "Hello world utility function for quality gate validation",
+      "priority": "P1",
+      "status": "open",
+      "size": "m",
+      "added": "2026-02-06T12:16:43.357405",
+      "completed_at": null,
+      "tags": [
+        "v001",
+        "foundation"
+      ],
+      "description": "Create a simple hello() utility function in src/test_target_2/hello.py that returns a greeting string. This provides the minimal code needed for all quality gates (ruff, mypy, pytest) to have something meaningful to run against.",
+      "acceptance_criteria": [
+        {
+          "text": "hello() function exists with proper type annotations",
+          "done": false
+        },
+        {
+          "text": "Function is importable from test_target_2 package",
+          "done": false
+        },
+        {
+          "text": "All quality gates pass against this function",
+          "done": false
+        }
+      ],
+      "notes": null,
+      "use_case": "This feature addresses: Hello world utility function for quality gate validation. It improves the system by resolving the described requirement.",
+      "implemented_in_version": null,
+      "implemented_in_theme": null
+    },
+    {
+      "id": "BL-007",
+      "title": "String utilities module (slugify, truncate, case_convert, etc.)",
+      "priority": "P2",
+      "status": "open",
+      "size": "m",
+      "added": "2026-02-06T12:16:47.235864",
+      "completed_at": null,
+      "tags": [
+        "v002",
+        "utility"
+      ],
+      "description": "Create src/test_target_2/string_utils.py with idiomatic Python string manipulation functions: slugify, truncate, camel_to_snake, snake_to_camel, title_case, capitalize_words, etc. Full test coverage in tests/test_string_utils.py.",
+      "acceptance_criteria": [
+        {
+          "text": "string_utils.py exists with at least 5 string utility functions",
+          "done": false
+        },
+        {
+          "text": "All functions have type annotations and docstrings",
+          "done": false
+        },
+        {
+          "text": "tests/test_string_utils.py exists with comprehensive test coverage",
+          "done": false
+        },
+        {
+          "text": "All tests pass, ruff and mypy clean",
+          "done": false
+        }
+      ],
+      "notes": null,
+      "use_case": "This feature addresses: String utilities module (slugify, truncate, case_convert, etc.). It improves the system by resolving the described requirement.",
+      "implemented_in_version": null,
+      "implemented_in_theme": null
+    },
+    {
+      "id": "BL-008",
+      "title": "Math/number utilities module (clamp, lerp, round_to, is_close, etc.)",
+      "priority": "P2",
+      "status": "open",
+      "size": "m",
+      "added": "2026-02-06T12:16:50.401440",
+      "completed_at": null,
+      "tags": [
+        "v002",
+        "utility"
+      ],
+      "description": "Create src/test_target_2/math_utils.py with numeric utility functions: clamp, lerp, round_to, is_close, percentage, safe_divide, etc. Full test coverage in tests/test_math_utils.py.",
+      "acceptance_criteria": [
+        {
+          "text": "math_utils.py exists with at least 5 math utility functions",
+          "done": false
+        },
+        {
+          "text": "All functions have type annotations and docstrings",
+          "done": false
+        },
+        {
+          "text": "tests/test_math_utils.py exists with comprehensive test coverage",
+          "done": false
+        },
+        {
+          "text": "Edge cases (division by zero, overflow) are handled and tested",
+          "done": false
+        }
+      ],
+      "notes": null,
+      "use_case": "This feature addresses: Math/number utilities module (clamp, lerp, round_to, is_close, etc.). It improves the system by resolving the described requirement.",
+      "implemented_in_version": null,
+      "implemented_in_theme": null
+    },
+    {
+      "id": "BL-009",
+      "title": "Collection utilities module (chunk, flatten, unique_by, group_by, etc.)",
+      "priority": "P2",
+      "status": "open",
+      "size": "m",
+      "added": "2026-02-06T12:16:53.232711",
+      "completed_at": null,
+      "tags": [
+        "v002",
+        "utility"
+      ],
+      "description": "Create src/test_target_2/collection_utils.py with collection manipulation functions: chunk, flatten, unique_by, group_by, partition, compact, take, drop, etc. Full test coverage in tests/test_collection_utils.py.",
+      "acceptance_criteria": [
+        {
+          "text": "collection_utils.py exists with at least 6 collection utility functions",
+          "done": false
+        },
+        {
+          "text": "Functions use generics/TypeVar for type safety",
+          "done": false
+        },
+        {
+          "text": "tests/test_collection_utils.py exists with comprehensive test coverage",
+          "done": false
+        },
+        {
+          "text": "All tests pass, ruff and mypy clean",
+          "done": false
+        }
+      ],
+      "notes": null,
+      "use_case": "This feature addresses: Collection utilities module (chunk, flatten, unique_by, group_by, etc.). It improves the system by resolving the described requirement.",
+      "implemented_in_version": null,
+      "implemented_in_theme": null
+    },
+    {
+      "id": "BL-010",
+      "title": "Custom exception hierarchy (ValidationError, NotFoundError, etc.)",
+      "priority": "P2",
+      "status": "open",
+      "size": "m",
+      "added": "2026-02-06T12:16:57.075247",
+      "completed_at": null,
+      "tags": [
+        "v003",
+        "validation"
+      ],
+      "description": "Create src/test_target_2/exceptions.py with a custom exception hierarchy: base TestTarget2Error, plus ValidationError, NotFoundError, ConfigError, etc. Use dataclass-style attributes for structured error context.",
+      "acceptance_criteria": [
+        {
+          "text": "exceptions.py exists with base error and at least 3 specific error types",
+          "done": false
+        },
+        {
+          "text": "Exceptions carry structured context (field name, invalid value, etc.)",
+          "done": false
+        },
+        {
+          "text": "tests/test_exceptions.py validates error construction and inheritance",
+          "done": false
+        },
+        {
+          "text": "All quality gates pass",
+          "done": false
+        }
+      ],
+      "notes": null,
+      "use_case": "This feature addresses: Custom exception hierarchy (ValidationError, NotFoundError, etc.). It improves the system by resolving the described requirement.",
+      "implemented_in_version": null,
+      "implemented_in_theme": null
+    },
+    {
+      "id": "BL-011",
+      "title": "Input validation functions (validate_range, validate_non_empty, validate_type, etc.)",
+      "priority": "P2",
+      "status": "open",
+      "size": "m",
+      "added": "2026-02-06T12:17:00.143492",
+      "completed_at": null,
+      "tags": [
+        "v003",
+        "validation"
+      ],
+      "description": "Create src/test_target_2/validators.py with reusable input validation functions: validate_range, validate_non_empty, validate_type, validate_pattern, validate_length, etc. Raise custom exceptions from exceptions.py on failure.",
+      "acceptance_criteria": [
+        {
+          "text": "validators.py exists with at least 5 validation functions",
+          "done": false
+        },
+        {
+          "text": "Validators raise appropriate custom exceptions",
+          "done": false
+        },
+        {
+          "text": "tests/test_validators.py covers both valid and invalid inputs",
+          "done": false
+        },
+        {
+          "text": "All quality gates pass",
+          "done": false
+        }
+      ],
+      "notes": null,
+      "use_case": "This feature addresses: Input validation functions (validate_range, validate_non_empty, validate_type, etc.). It improves the system by resolving the described requirement.",
+      "implemented_in_version": null,
+      "implemented_in_theme": null
+    },
+    {
+      "id": "BL-012",
+      "title": "Retrofit validation into existing v002 utility functions",
+      "priority": "P2",
+      "status": "open",
+      "size": "m",
+      "added": "2026-02-06T12:17:03.738120",
+      "completed_at": null,
+      "tags": [
+        "v003",
+        "validation"
+      ],
+      "description": "Add input validation to existing string_utils, math_utils, and collection_utils functions using the validators module. Functions should raise ValidationError for invalid inputs instead of silently failing or returning unexpected results.",
+      "acceptance_criteria": [
+        {
+          "text": "Existing utility functions validate their inputs",
+          "done": false
+        },
+        {
+          "text": "Invalid inputs raise ValidationError with descriptive messages",
+          "done": false
+        },
+        {
+          "text": "Existing tests still pass (non-breaking for valid inputs)",
+          "done": false
+        },
+        {
+          "text": "New tests cover validation error cases",
+          "done": false
+        }
+      ],
+      "notes": null,
+      "use_case": "This feature addresses: Retrofit validation into existing v002 utility functions. It improves the system by resolving the described requirement.",
+      "implemented_in_version": null,
+      "implemented_in_theme": null
+    },
+    {
+      "id": "BL-013",
+      "title": "Property-based testing with Hypothesis for edge case coverage",
+      "priority": "P2",
+      "status": "open",
+      "size": "m",
+      "added": "2026-02-06T12:17:07.533051",
+      "completed_at": null,
+      "tags": [
+        "v003",
+        "validation",
+        "testing"
+      ],
+      "description": "Add Hypothesis as a dev dependency and create property-based tests for utility functions. Focus on invariants: e.g., clamp always returns within bounds, slugify output is always URL-safe, chunk preserves all elements, etc.",
+      "acceptance_criteria": [
+        {
+          "text": "hypothesis is listed as a dev dependency",
+          "done": false
+        },
+        {
+          "text": "tests/test_properties.py exists with property-based tests",
+          "done": false
+        },
+        {
+          "text": "At least 5 properties are tested across different utility modules",
+          "done": false
+        },
+        {
+          "text": "All tests pass including hypothesis-generated cases",
+          "done": false
+        }
+      ],
+      "notes": null,
+      "use_case": "This feature addresses: Property-based testing with Hypothesis for edge case coverage. It improves the system by resolving the described requirement.",
+      "implemented_in_version": null,
+      "implemented_in_theme": null
+    }
+  ],
+  "completed_count": 0,
+  "cancelled_count": 0
+}
