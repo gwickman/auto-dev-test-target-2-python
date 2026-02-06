@@ -1,10 +1,10 @@
 {
   "exploration_id": "design-version-orchestrator-1770386197918",
   "results_folder": "design-version-orchestrator",
-  "status": "pending",
-  "pid": null,
+  "status": "running",
+  "pid": 18348,
   "started_at": "2026-02-06T13:56:37.918474",
-  "updated_at": "2026-02-06T13:56:37.918474",
+  "updated_at": "2026-02-06T13:56:40.006387",
   "completed_at": null,
   "error": null,
   "documents": [],

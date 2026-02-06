@@ -1,0 +1,15 @@
+{
+  "exploration_id": "design-v001-001-environment-1770386308864",
+  "results_folder": "design-v001-001-environment",
+  "status": "pending",
+  "pid": null,
+  "started_at": "2026-02-06T13:58:28.864711",
+  "updated_at": "2026-02-06T13:58:28.864711",
+  "completed_at": null,
+  "error": null,
+  "documents": [],
+  "committed": false,
+  "commit_error": null,
+  "prompt_path": "comms/inbox/exploration/design-v001-001-environment/prompt.md",
+  "outbox_path": "comms/outbox/exploration/design-v001-001-environment"
+}
