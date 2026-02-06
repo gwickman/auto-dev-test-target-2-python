@@ -1,0 +1,20 @@
+{
+  "exploration_id": "design-v001-002-backlog-1770386533656",
+  "results_folder": "design-v001-002-backlog",
+  "status": "complete",
+  "pid": 18348,
+  "started_at": "2026-02-06T14:02:13.656107",
+  "updated_at": "2026-02-06T14:04:13.411569",
+  "completed_at": "2026-02-06T14:04:13.411275",
+  "error": null,
+  "documents": [
+    "README.md",
+    "backlog-details.md",
+    "learnings-summary.md",
+    "retrospective-insights.md"
+  ],
+  "committed": false,
+  "commit_error": "Commit failed: error: invalid path 'nul'\nerror: unable to add 'nul' to index\nfatal: adding files failed\n",
+  "prompt_path": "comms/inbox/exploration/design-v001-002-backlog/prompt.md",
+  "outbox_path": "comms/outbox/exploration/design-v001-002-backlog"
+}

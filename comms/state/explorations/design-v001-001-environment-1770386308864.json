@@ -1,15 +1,19 @@
 {
   "exploration_id": "design-v001-001-environment-1770386308864",
   "results_folder": "design-v001-001-environment",
-  "status": "pending",
-  "pid": null,
+  "status": "complete",
+  "pid": 18348,
   "started_at": "2026-02-06T13:58:28.864711",
-  "updated_at": "2026-02-06T13:58:28.864711",
-  "completed_at": null,
+  "updated_at": "2026-02-06T14:00:40.428614",
+  "completed_at": "2026-02-06T14:00:40.428044",
   "error": null,
-  "documents": [],
+  "documents": [
+    "README.md",
+    "environment-checks.md",
+    "version-context.md"
+  ],
   "committed": false,
-  "commit_error": null,
+  "commit_error": "Commit failed: error: invalid path 'nul'\nerror: unable to add 'nul' to index\nfatal: adding files failed\n",
   "prompt_path": "comms/inbox/exploration/design-v001-001-environment/prompt.md",
   "outbox_path": "comms/outbox/exploration/design-v001-001-environment"
 }

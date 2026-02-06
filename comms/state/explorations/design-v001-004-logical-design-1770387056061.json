@@ -1,0 +1,20 @@
+{
+  "exploration_id": "design-v001-004-logical-design-1770387056061",
+  "results_folder": "design-v001-004-logical-design",
+  "status": "complete",
+  "pid": 18348,
+  "started_at": "2026-02-06T14:10:56.061189",
+  "updated_at": "2026-02-06T14:14:00.343038",
+  "completed_at": "2026-02-06T14:14:00.342703",
+  "error": null,
+  "documents": [
+    "README.md",
+    "logical-design.md",
+    "risks-and-unknowns.md",
+    "test-strategy.md"
+  ],
+  "committed": false,
+  "commit_error": "Commit failed: error: invalid path 'nul'\nerror: unable to add 'nul' to index\nfatal: adding files failed\n",
+  "prompt_path": "comms/inbox/exploration/design-v001-004-logical-design/prompt.md",
+  "outbox_path": "comms/outbox/exploration/design-v001-004-logical-design"
+}
