@@ -1,0 +1,107 @@
+{
+  "items": [
+    {
+      "id": "LRN-001",
+      "title": "Structural Placeholder Pattern Enables Incremental Validation",
+      "tags": [
+        "pattern",
+        "scaffolding",
+        "incremental-delivery",
+        "quality-gates"
+      ],
+      "created": "2026-02-06T19:05:22.543322Z",
+      "source": "v001/01-project-scaffolding retrospective",
+      "source_type": "manual",
+      "related_backlog": null,
+      "summary": "Create minimal structural placeholders early so build tools and quality gates can run from the first feature onward.",
+      "content_path": "docs/auto-dev/LEARNINGS/LRN-001-structural-placeholder-pattern-enables-incremental.md",
+      "status": "active"
+    },
+    {
+      "id": "LRN-002",
+      "title": "Start Strict Stay Strict for Quality Tools",
+      "tags": [
+        "pattern",
+        "quality-gates",
+        "configuration",
+        "tech-debt-prevention"
+      ],
+      "created": "2026-02-06T19:05:31.245989Z",
+      "source": "v001/02-quality-and-ci retrospective",
+      "source_type": "manual",
+      "related_backlog": null,
+      "summary": "Adopt strict quality tool configurations from project inception; retrofitting strictness later is harder and accumulates tech debt.",
+      "content_path": "docs/auto-dev/LEARNINGS/LRN-002-start-strict-stay-strict-for-quality-tools.md",
+      "status": "active"
+    },
+    {
+      "id": "LRN-003",
+      "title": "Gate Integrator Pattern for Quality Themes",
+      "tags": [
+        "pattern",
+        "ci-cd",
+        "quality-gates",
+        "theme-design"
+      ],
+      "created": "2026-02-06T19:05:38.804432Z",
+      "source": "v001/02-quality-and-ci retrospective",
+      "source_type": "manual",
+      "related_backlog": null,
+      "summary": "Cap quality themes with a CI feature that combines all gates, acting as an integration test for tool configurations.",
+      "content_path": "docs/auto-dev/LEARNINGS/LRN-003-gate-integrator-pattern-for-quality-themes.md",
+      "status": "active"
+    },
+    {
+      "id": "LRN-004",
+      "title": "Small Sequential Features for Foundational Work",
+      "tags": [
+        "pattern",
+        "feature-design",
+        "scaffolding",
+        "incremental-delivery"
+      ],
+      "created": "2026-02-06T19:05:45.868093Z",
+      "source": "v001 version retrospective",
+      "source_type": "manual",
+      "related_backlog": null,
+      "summary": "Break foundational work into 3-4 small sequential features with clear dependencies for clean progression and independent verification.",
+      "content_path": "docs/auto-dev/LEARNINGS/LRN-004-small-sequential-features-for-foundational-work.md",
+      "status": "active"
+    },
+    {
+      "id": "LRN-005",
+      "title": "Configure Quality Tools Before Writing Tests",
+      "tags": [
+        "pattern",
+        "quality-gates",
+        "feature-ordering",
+        "theme-design"
+      ],
+      "created": "2026-02-06T19:05:53.859684Z",
+      "source": "v001/02-quality-and-ci retrospective",
+      "source_type": "manual",
+      "related_backlog": null,
+      "summary": "Configure linter and type checker before test framework so each tool validates its own config in isolation before tests add complexity.",
+      "content_path": "docs/auto-dev/LEARNINGS/LRN-005-configure-quality-tools-before-writing-tests.md",
+      "status": "active"
+    },
+    {
+      "id": "LRN-006",
+      "title": "Pytest Exit Code 5 Expected in Pre-Test Phases",
+      "tags": [
+        "debugging",
+        "pytest",
+        "quality-gates",
+        "automated-reporting"
+      ],
+      "created": "2026-02-06T19:06:02.938135Z",
+      "source": "v001/02-quality-and-ci/001-001-ruff-config completion-report",
+      "source_type": "manual",
+      "related_backlog": null,
+      "summary": "Pytest exit code 5 (no tests collected) is expected during pre-test features; automated reporting should handle it as a pass, not a failure.",
+      "content_path": "docs/auto-dev/LEARNINGS/LRN-006-pytest-exit-code-5-expected-in-pre-test-phases.md",
+      "status": "active"
+    }
+  ],
+  "next_id": 7
+}
