@@ -1,15 +1,17 @@
 {
   "exploration_id": "v001-retrospective-1770403746673",
   "results_folder": "v001-retrospective",
-  "status": "running",
+  "status": "complete",
   "pid": 21716,
   "started_at": "2026-02-06T18:49:06.673618",
-  "updated_at": "2026-02-06T18:49:06.858712",
-  "completed_at": null,
+  "updated_at": "2026-02-06T19:22:59.932482",
+  "completed_at": "2026-02-06T19:22:59.932111",
   "error": null,
-  "documents": [],
+  "documents": [
+    "README.md"
+  ],
   "committed": false,
-  "commit_error": null,
+  "commit_error": "Commit failed: error: short read while indexing nul\nerror: nul: failed to insert into database\nerror: unable to index file 'nul'\nfatal: adding files failed\n",
   "prompt_path": "comms/inbox/exploration/v001-retrospective/prompt.md",
   "outbox_path": "comms/outbox/exploration/v001-retrospective"
 }
