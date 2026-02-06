@@ -9,7 +9,7 @@
 
 | Version | Roadmap Reference | Focus | Prerequisites | Status |
 |---------|-------------------|-------|---------------|--------|
-| v001 | Foundation | Project scaffolding, quality gates, CI | None | planned |
+| v001 | Foundation | Project scaffolding, quality gates, CI | None | **completed** |
 | v002 | Utility Library | String, math, and collection utils | v001 | planned |
 | v003 | Validation & Errors | Exception hierarchy, validators, property tests | v002 | planned |
 
@@ -87,7 +87,11 @@ No investigation dependencies exist. This is a straightforward Python utility li
 
 ## Completed Versions
 
-_None yet._
+### v001 - Foundation (completed 2026-02-06)
+- 2 themes, 7 features, 25/25 acceptance criteria passed
+- Project scaffolding with uv, src-layout package, typed hello() function
+- Quality gates: ruff, mypy (strict), pytest
+- GitHub Actions CI workflow
 
 ## Backlog Integration
 
@@ -108,3 +112,4 @@ Query backlog: `list_backlog_items(project="auto-dev-test-target-2-python", tags
 | Date | Change | Rationale |
 |------|--------|-----------|
 | 2026-02-06 | Initial plan created | Project bootstrap — mapped 3 versions with 6 themes total covering foundation through validation |
+| 2026-02-06 | v001 marked completed | Version closure — all themes/features completed successfully |
