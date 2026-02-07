@@ -1,6 +1,6 @@
 # Project Backlog
 
-*Last updated: 2026-02-06 18:58*
+*Last updated: 2026-02-06 20:37*
 
 **Total completed:** 6 | **Cancelled:** 0
 
@@ -9,7 +9,7 @@
 | Priority | Name | Count |
 |----------|------|-------|
 | P0 | Critical | 0 |
-| P1 | High | 0 |
+| P1 | High | 1 |
 | P2 | Medium | 7 |
 | P3 | Low | 0 |
 
@@ -17,6 +17,7 @@
 
 | ID | Pri | Size | Title | Description |
 |----|-----|------|-------|-------------|
+| <a id="bl-014-ref"></a>[BL-014](#bl-014) | P1 | m | Add Windows bash /dev/null guidance to AGENTS.md and nul to .gitignore | Add Windows bash null redirect guidance to AGENTS.md and ... |
 | <a id="bl-007-ref"></a>[BL-007](#bl-007) | P2 | m | String utilities module (slugify, truncate, case_convert, etc.) | Create src/test_target_2/string_utils.py with idiomatic P... |
 | <a id="bl-008-ref"></a>[BL-008](#bl-008) | P2 | m | Math/number utilities module (clamp, lerp, round_to, is_close, etc.) | Create src/test_target_2/math_utils.py with numeric utili... |
 | <a id="bl-009-ref"></a>[BL-009](#bl-009) | P2 | m | Collection utilities module (chunk, flatten, unique_by, group_by, etc.) | Create src/test_target_2/collection_utils.py with collect... |
@@ -34,8 +35,24 @@
 | v002 | 3 | BL-007, BL-008, BL-009 |
 | utility | 3 | BL-007, BL-008, BL-009 |
 | testing | 1 | BL-013 |
+| windows | 1 | BL-014 |
+| agents-md | 1 | BL-014 |
+| gitignore | 1 | BL-014 |
 
 ## Item Details
+
+### P1: High
+
+#### 📋 BL-014: Add Windows bash /dev/null guidance to AGENTS.md and nul to .gitignore
+
+**Status:** open
+**Tags:** windows, agents-md, gitignore
+
+Add Windows bash null redirect guidance to AGENTS.md and add `nul` to .gitignore. In bash contexts on Windows: Always use `/dev/null` for output redirection (Git Bash correctly translates this to the Windows null device). Never use bare `nul` which gets interpreted as a literal filename in MSYS/Git Bash environments. Correct: `command > /dev/null 2>&1`. Wrong: `command > nul 2>&1`.
+
+**Use Case:** This feature addresses: Add Windows bash /dev/null guidance to AGENTS.md and nul to .gitignore. It improves the system by resolving the described requirement.
+
+[↑ Back to list](#bl-014-ref)
 
 ### P2: Medium
 
