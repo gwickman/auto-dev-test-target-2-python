@@ -1,6 +1,6 @@
 # Project Backlog
 
-*Last updated: 2026-02-06 20:37*
+*Last updated: 2026-02-15 01:19*
 
 **Total completed:** 6 | **Cancelled:** 0
 
@@ -9,7 +9,7 @@
 | Priority | Name | Count |
 |----------|------|-------|
 | P0 | Critical | 0 |
-| P1 | High | 1 |
+| P1 | High | 3 |
 | P2 | Medium | 7 |
 | P3 | Low | 0 |
 
@@ -18,6 +18,8 @@
 | ID | Pri | Size | Title | Description |
 |----|-----|------|-------|-------------|
 | <a id="bl-014-ref"></a>[BL-014](#bl-014) | P1 | m | Add Windows bash /dev/null guidance to AGENTS.md and nul to .gitignore | Add Windows bash null redirect guidance to AGENTS.md and ... |
+| <a id="bl-015-ref"></a>[BL-015](#bl-015) | P1 | l | Add PR vs BL routing guidance to AGENTS.md (auto-dev-test-target-2-python) | AGENTS.md in the auto-dev-test-target-2-python project li... |
+| <a id="bl-016-ref"></a>[BL-016](#bl-016) | P1 | l | Add WebFetch safety rules to AGENTS.md | Mirror of auto-dev-mcp BL-517. Add WebFetch safety block ... |
 | <a id="bl-007-ref"></a>[BL-007](#bl-007) | P2 | m | String utilities module (slugify, truncate, case_convert, etc.) | Create src/test_target_2/string_utils.py with idiomatic P... |
 | <a id="bl-008-ref"></a>[BL-008](#bl-008) | P2 | m | Math/number utilities module (clamp, lerp, round_to, is_close, etc.) | Create src/test_target_2/math_utils.py with numeric utili... |
 | <a id="bl-009-ref"></a>[BL-009](#bl-009) | P2 | m | Collection utilities module (chunk, flatten, unique_by, group_by, etc.) | Create src/test_target_2/collection_utils.py with collect... |
@@ -34,10 +36,16 @@
 | validation | 4 | BL-010, BL-011, BL-012, BL-013 |
 | v002 | 3 | BL-007, BL-008, BL-009 |
 | utility | 3 | BL-007, BL-008, BL-009 |
+| agents-md | 3 | BL-014, BL-015, BL-016 |
 | testing | 1 | BL-013 |
 | windows | 1 | BL-014 |
-| agents-md | 1 | BL-014 |
 | gitignore | 1 | BL-014 |
+| product-requests | 1 | BL-015 |
+| documentation | 1 | BL-015 |
+| decision-framework | 1 | BL-015 |
+| webfetch | 1 | BL-016 |
+| safety | 1 | BL-016 |
+| hang-prevention | 1 | BL-016 |
 
 ## Item Details
 
@@ -53,6 +61,50 @@ Add Windows bash null redirect guidance to AGENTS.md and add `nul` to .gitignore
 **Use Case:** This feature addresses: Add Windows bash /dev/null guidance to AGENTS.md and nul to .gitignore. It improves the system by resolving the described requirement.
 
 [↑ Back to list](#bl-014-ref)
+
+#### 📋 BL-015: Add PR vs BL routing guidance to AGENTS.md (auto-dev-test-target-2-python)
+
+**Status:** open
+**Tags:** agents-md, product-requests, documentation, decision-framework
+
+AGENTS.md in the auto-dev-test-target-2-python project lists both add_product_request and add_backlog_item in the tool inventory but provides no guidance on when to use which. Claude Code sessions following AGENTS.md have no routing guidance for capturing ideas vs filing structured bugs.
+
+The exploration pr-vs-bl-guidance on auto-dev-mcp (Gap 4) identified that AGENTS.md across all managed projects has zero PR vs BL routing guidance. Since AGENTS.md is the first document Claude Code reads in every session, it is the highest-leverage location for this guidance.
+
+Without this, Claude Code defaults to add_backlog_item for all discoveries, bypassing the lightweight product request pathway entirely.
+
+**Use Case:** During any Claude Code session on auto-dev-test-target-2-python, the agent reads AGENTS.md first. When it discovers an improvement opportunity mid-implementation, it currently has no guidance on whether to file a PR or BL. With this change, AGENTS.md tells it to default to product requests for ideas and reserve backlog items for structured problems.
+
+**Acceptance Criteria:**
+- [ ] AGENTS.md contains a section documenting when to create a Product Request vs a Backlog Item
+- [ ] Section includes the maturity gradient: PR for ideas/observations, BL for structured problems with acceptance criteria
+- [ ] Section includes the default rule: when in doubt, start with a Product Request
+- [ ] Section cross-references add_product_request and add_backlog_item tool_help for detailed guidance
+
+**Notes:** Mirror of BL-510 (auto-dev-mcp). Keep the AGENTS.md addition concise — 3-5 lines max. Content should be identical across all managed projects for consistency.
+
+[↑ Back to list](#bl-015-ref)
+
+#### 📋 BL-016: Add WebFetch safety rules to AGENTS.md
+
+**Status:** open
+**Tags:** agents-md, webfetch, safety, hang-prevention
+
+Mirror of auto-dev-mcp BL-517. Add WebFetch safety block to AGENTS.md. Exact text:
+
+## WebFetch Safety (mandatory)
+- NEVER WebFetch a URL you generated from memory — only WebFetch URLs returned by WebSearch
+- Prefer WebSearch over WebFetch for research
+- MANDATORY: Before every WebFetch call you MUST run: curl -sL --max-time 10 -o /dev/null -w "%{http_code}" &lt;url&gt; and ONLY proceed with WebFetch if curl returns 2xx/3xx
+
+**Use Case:** Same as BL-517: prevent WebFetch hangs from freezing sessions by requiring URL verification before every WebFetch call.
+
+**Acceptance Criteria:**
+- [ ] AGENTS.md contains a '## WebFetch Safety (mandatory)' section with all 3 rules verbatim
+- [ ] The section is placed near top-level instructions, not buried at the end
+- [ ] No other changes to AGENTS.md beyond the insertion
+
+[↑ Back to list](#bl-016-ref)
 
 ### P2: Medium
 

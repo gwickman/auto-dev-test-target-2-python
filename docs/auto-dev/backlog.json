@@ -1,6 +1,6 @@
 {
-  "next_id": 15,
-  "updated_at": "2026-02-06T20:37:36.336636",
+  "next_id": 17,
+  "updated_at": "2026-02-15T01:19:21.654762",
   "items": [
     {
       "id": "BL-001",
@@ -36,7 +36,8 @@
       "notes": null,
       "use_case": "This feature addresses: Python project scaffolding (pyproject.toml, src layout, __init__.py). It improves the system by resolving the described requirement.",
       "implemented_in_version": "v001",
-      "implemented_in_theme": "01-project-scaffolding"
+      "implemented_in_theme": "01-project-scaffolding",
+      "upvotes": 0
     },
     {
       "id": "BL-002",
@@ -72,7 +73,8 @@
       "notes": null,
       "use_case": "This feature addresses: pytest setup with basic passing test. It improves the system by resolving the described requirement.",
       "implemented_in_version": "v001",
-      "implemented_in_theme": "02-quality-and-ci"
+      "implemented_in_theme": "02-quality-and-ci",
+      "upvotes": 0
     },
     {
       "id": "BL-003",
@@ -108,7 +110,8 @@
       "notes": null,
       "use_case": "This feature addresses: ruff configuration (linting + formatting). It improves the system by resolving the described requirement.",
       "implemented_in_version": "v001",
-      "implemented_in_theme": "02-quality-and-ci"
+      "implemented_in_theme": "02-quality-and-ci",
+      "upvotes": 0
     },
     {
       "id": "BL-004",
@@ -144,7 +147,8 @@
       "notes": null,
       "use_case": "This feature addresses: mypy configuration with strict mode. It improves the system by resolving the described requirement.",
       "implemented_in_version": "v001",
-      "implemented_in_theme": "02-quality-and-ci"
+      "implemented_in_theme": "02-quality-and-ci",
+      "upvotes": 0
     },
     {
       "id": "BL-005",
@@ -180,7 +184,8 @@
       "notes": null,
       "use_case": "This feature addresses: GitHub Actions CI workflow (lint, typecheck, test). It improves the system by resolving the described requirement.",
       "implemented_in_version": "v001",
-      "implemented_in_theme": "02-quality-and-ci"
+      "implemented_in_theme": "02-quality-and-ci",
+      "upvotes": 0
     },
     {
       "id": "BL-006",
@@ -212,7 +217,8 @@
       "notes": null,
       "use_case": "This feature addresses: Hello world utility function for quality gate validation. It improves the system by resolving the described requirement.",
       "implemented_in_version": "v001",
-      "implemented_in_theme": "01-project-scaffolding"
+      "implemented_in_theme": "01-project-scaffolding",
+      "upvotes": 0
     },
     {
       "id": "BL-007",
@@ -248,7 +254,8 @@
       "notes": null,
       "use_case": "This feature addresses: String utilities module (slugify, truncate, case_convert, etc.). It improves the system by resolving the described requirement.",
       "implemented_in_version": null,
-      "implemented_in_theme": null
+      "implemented_in_theme": null,
+      "upvotes": 0
     },
     {
       "id": "BL-008",
@@ -284,7 +291,8 @@
       "notes": null,
       "use_case": "This feature addresses: Math/number utilities module (clamp, lerp, round_to, is_close, etc.). It improves the system by resolving the described requirement.",
       "implemented_in_version": null,
-      "implemented_in_theme": null
+      "implemented_in_theme": null,
+      "upvotes": 0
     },
     {
       "id": "BL-009",
@@ -320,7 +328,8 @@
       "notes": null,
       "use_case": "This feature addresses: Collection utilities module (chunk, flatten, unique_by, group_by, etc.). It improves the system by resolving the described requirement.",
       "implemented_in_version": null,
-      "implemented_in_theme": null
+      "implemented_in_theme": null,
+      "upvotes": 0
     },
     {
       "id": "BL-010",
@@ -356,7 +365,8 @@
       "notes": null,
       "use_case": "This feature addresses: Custom exception hierarchy (ValidationError, NotFoundError, etc.). It improves the system by resolving the described requirement.",
       "implemented_in_version": null,
-      "implemented_in_theme": null
+      "implemented_in_theme": null,
+      "upvotes": 0
     },
     {
       "id": "BL-011",
@@ -392,7 +402,8 @@
       "notes": null,
       "use_case": "This feature addresses: Input validation functions (validate_range, validate_non_empty, validate_type, etc.). It improves the system by resolving the described requirement.",
       "implemented_in_version": null,
-      "implemented_in_theme": null
+      "implemented_in_theme": null,
+      "upvotes": 0
     },
     {
       "id": "BL-012",
@@ -428,7 +439,8 @@
       "notes": null,
       "use_case": "This feature addresses: Retrofit validation into existing v002 utility functions. It improves the system by resolving the described requirement.",
       "implemented_in_version": null,
-      "implemented_in_theme": null
+      "implemented_in_theme": null,
+      "upvotes": 0
     },
     {
       "id": "BL-013",
@@ -465,7 +477,8 @@
       "notes": null,
       "use_case": "This feature addresses: Property-based testing with Hypothesis for edge case coverage. It improves the system by resolving the described requirement.",
       "implemented_in_version": null,
-      "implemented_in_theme": null
+      "implemented_in_theme": null,
+      "upvotes": 0
     },
     {
       "id": "BL-014",
@@ -485,7 +498,82 @@
       "notes": null,
       "use_case": "This feature addresses: Add Windows bash /dev/null guidance to AGENTS.md and nul to .gitignore. It improves the system by resolving the described requirement.",
       "implemented_in_version": null,
-      "implemented_in_theme": null
+      "implemented_in_theme": null,
+      "upvotes": 0
+    },
+    {
+      "id": "BL-015",
+      "title": "Add PR vs BL routing guidance to AGENTS.md (auto-dev-test-target-2-python)",
+      "priority": "P1",
+      "status": "open",
+      "size": "l",
+      "added": "2026-02-14T11:57:28.907936",
+      "completed_at": null,
+      "tags": [
+        "agents-md",
+        "product-requests",
+        "documentation",
+        "decision-framework"
+      ],
+      "description": "AGENTS.md in the auto-dev-test-target-2-python project lists both add_product_request and add_backlog_item in the tool inventory but provides no guidance on when to use which. Claude Code sessions following AGENTS.md have no routing guidance for capturing ideas vs filing structured bugs.\n\nThe exploration pr-vs-bl-guidance on auto-dev-mcp (Gap 4) identified that AGENTS.md across all managed projects has zero PR vs BL routing guidance. Since AGENTS.md is the first document Claude Code reads in every session, it is the highest-leverage location for this guidance.\n\nWithout this, Claude Code defaults to add_backlog_item for all discoveries, bypassing the lightweight product request pathway entirely.",
+      "acceptance_criteria": [
+        {
+          "text": "AGENTS.md contains a section documenting when to create a Product Request vs a Backlog Item",
+          "done": false
+        },
+        {
+          "text": "Section includes the maturity gradient: PR for ideas/observations, BL for structured problems with acceptance criteria",
+          "done": false
+        },
+        {
+          "text": "Section includes the default rule: when in doubt, start with a Product Request",
+          "done": false
+        },
+        {
+          "text": "Section cross-references add_product_request and add_backlog_item tool_help for detailed guidance",
+          "done": false
+        }
+      ],
+      "notes": "Mirror of BL-510 (auto-dev-mcp). Keep the AGENTS.md addition concise \u2014 3-5 lines max. Content should be identical across all managed projects for consistency.",
+      "use_case": "During any Claude Code session on auto-dev-test-target-2-python, the agent reads AGENTS.md first. When it discovers an improvement opportunity mid-implementation, it currently has no guidance on whether to file a PR or BL. With this change, AGENTS.md tells it to default to product requests for ideas and reserve backlog items for structured problems.",
+      "implemented_in_version": null,
+      "implemented_in_theme": null,
+      "upvotes": 0
+    },
+    {
+      "id": "BL-016",
+      "title": "Add WebFetch safety rules to AGENTS.md",
+      "priority": "P1",
+      "status": "open",
+      "size": "l",
+      "added": "2026-02-15T01:19:21.654757",
+      "completed_at": null,
+      "tags": [
+        "agents-md",
+        "webfetch",
+        "safety",
+        "hang-prevention"
+      ],
+      "description": "Mirror of auto-dev-mcp BL-517. Add WebFetch safety block to AGENTS.md. Exact text:\n\n## WebFetch Safety (mandatory)\n- NEVER WebFetch a URL you generated from memory \u2014 only WebFetch URLs returned by WebSearch\n- Prefer WebSearch over WebFetch for research\n- MANDATORY: Before every WebFetch call you MUST run: curl -sL --max-time 10 -o /dev/null -w \"%{http_code}\" &lt;url&gt; and ONLY proceed with WebFetch if curl returns 2xx/3xx",
+      "acceptance_criteria": [
+        {
+          "text": "AGENTS.md contains a '## WebFetch Safety (mandatory)' section with all 3 rules verbatim",
+          "done": false
+        },
+        {
+          "text": "The section is placed near top-level instructions, not buried at the end",
+          "done": false
+        },
+        {
+          "text": "No other changes to AGENTS.md beyond the insertion",
+          "done": false
+        }
+      ],
+      "notes": null,
+      "use_case": "Same as BL-517: prevent WebFetch hangs from freezing sessions by requiring URL verification before every WebFetch call.",
+      "implemented_in_version": null,
+      "implemented_in_theme": null,
+      "upvotes": 0
     }
   ],
   "completed_count": 6,
