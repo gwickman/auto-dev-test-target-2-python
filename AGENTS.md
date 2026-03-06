@@ -59,8 +59,22 @@ When this agent is spawned by an MCP server for autonomous execution:
 
 ```
 auto-dev-test-target-2-python/
-├── comms/
+├── src/
+│   └── test_target_2/
+│       ├── __init__.py
+│       ├── hello.py
+│       ├── string_utils.py
+│       └── math_utils.py
+├── tests/
+│   ├── __init__.py
+│   ├── conftest.py
+│   ├── test_hello.py
+│   ├── test_string_utils.py
+│   └── test_math_utils.py
 ├── docs/
+│   └── CHANGELOG.md
+├── comms/
 ├── LICENSE
 ├── README.md
+└── pyproject.toml
 ```
