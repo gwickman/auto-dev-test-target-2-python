@@ -1,6 +1,6 @@
 [project]
 name = "test-target-2"
-version = "0.1.0"
+version = "0.2.0"
 description = "A minimal Python utility library for auto-dev-mcp integration testing"
 requires-python = ">=3.11"
 
