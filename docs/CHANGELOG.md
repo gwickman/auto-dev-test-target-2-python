@@ -7,7 +7,8 @@ All notable changes to this project will be documented in this file.
 ### Added
 - `string_utils` module with slugify, truncate, case conversion (snake_case, camelCase, PascalCase), and more (BL-007)
 - `math_utils` module with clamp, lerp, safe_divide, remap, and more (BL-008)
-- Module-level re-exports in `__init__.py` for string_utils and math_utils
+- `collection_utils` module with chunk, flatten, unique_by, group_by, partition, compact (BL-009)
+- Module-level re-exports in `__init__.py` for string_utils, math_utils, and collection_utils
 - Version bump to 0.2.0
 
 ## [v001] - 2026-02-06

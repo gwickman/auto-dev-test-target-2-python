@@ -64,13 +64,15 @@ auto-dev-test-target-2-python/
 │       ├── __init__.py
 │       ├── hello.py
 │       ├── string_utils.py
-│       └── math_utils.py
+│       ├── math_utils.py
+│       └── collection_utils.py
 ├── tests/
 │   ├── __init__.py
 │   ├── conftest.py
 │   ├── test_hello.py
 │   ├── test_string_utils.py
-│   └── test_math_utils.py
+│   ├── test_math_utils.py
+│   └── test_collection_utils.py
 ├── docs/
 │   └── CHANGELOG.md
 ├── comms/
