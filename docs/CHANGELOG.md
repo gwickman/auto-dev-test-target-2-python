@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v004] - 2026-05-12
+
+### Added
+- `constants` module with `DEFAULT_HELLO_TARGET: str = "world"` package-level constant (BL-018)
+- `test_constants.py` with value, type, and importability assertions
+- Module re-export in `__init__.py`
+
 ## [v002] - 2026-03-06
 
 ### Added
