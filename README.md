@@ -6,3 +6,4 @@
 - **string_utils** — String manipulation utilities: slugify, truncate, case conversion (snake_case, camelCase, PascalCase), and more.
 - **math_utils** — Math utilities: clamp, lerp, safe_divide, remap, and more.
 - **collection_utils** — Collection utilities: chunk, flatten, unique_by, group_by, partition, compact.
+- **constants** — Package-level constants (DEFAULT_HELLO_TARGET, etc.).
