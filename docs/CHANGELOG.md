@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v005] - 2026-05-13
+
+### Added
+- `DEFAULT_FAREWELL: str = "goodbye"` constant to `constants` module (BL-019)
+- Test functions `test_default_farewell_value` and `test_default_farewell_type` in `test_constants.py`
+
 ## [v004] - 2026-05-12
 
 ### Added
