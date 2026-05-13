@@ -17,3 +17,11 @@ def test_constants_module_importable() -> None:
     """Test that constants module can be imported from package."""
     # Import succeeds at module scope; this test verifies the object exists
     assert hasattr(constants, "DEFAULT_HELLO_TARGET")
+
+
+def test_default_farewell_value() -> None:
+    assert constants.DEFAULT_FAREWELL == "goodbye"
+
+
+def test_default_farewell_type() -> None:
+    assert isinstance(constants.DEFAULT_FAREWELL, str)
