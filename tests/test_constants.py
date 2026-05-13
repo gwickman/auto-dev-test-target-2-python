@@ -25,3 +25,13 @@ def test_default_farewell_value() -> None:
 
 def test_default_farewell_type() -> None:
     assert isinstance(constants.DEFAULT_FAREWELL, str)
+
+
+def test_default_language_value() -> None:
+    """DEFAULT_LANGUAGE has expected value."""
+    assert constants.DEFAULT_LANGUAGE == "en"
+
+
+def test_default_language_type() -> None:
+    """DEFAULT_LANGUAGE is string type."""
+    assert isinstance(constants.DEFAULT_LANGUAGE, str)
