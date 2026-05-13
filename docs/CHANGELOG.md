@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v006] - 2026-05-14
+
+### Added
+- `DEFAULT_LANGUAGE: str = "en"` constant to `constants` module (BL-020)
+- Test functions `test_default_language_value` and `test_default_language_type` in `test_constants.py`
+
 ## [v005] - 2026-05-13
 
 ### Added
