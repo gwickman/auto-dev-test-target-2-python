@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v007] - 2026-05-14
+
+### Added
+- `DEFAULT_REGION: str = "us"` constant to `constants` module (BL-022)
+- Test functions `test_default_region_value` and `test_default_region_type` in `test_constants.py`
+
 ## [v006] - 2026-05-14
 
 ### Added
