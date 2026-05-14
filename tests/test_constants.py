@@ -35,3 +35,11 @@ def test_default_language_value() -> None:
 def test_default_language_type() -> None:
     """DEFAULT_LANGUAGE is string type."""
     assert isinstance(constants.DEFAULT_LANGUAGE, str)
+
+
+def test_default_region_value() -> None:
+    assert constants.DEFAULT_REGION == "us"
+
+
+def test_default_region_type() -> None:
+    assert isinstance(constants.DEFAULT_REGION, str)

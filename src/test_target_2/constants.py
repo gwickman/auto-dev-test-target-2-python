@@ -3,3 +3,4 @@
 DEFAULT_HELLO_TARGET: str = "world"
 DEFAULT_FAREWELL: str = "goodbye"
 DEFAULT_LANGUAGE: str = "en"
+DEFAULT_REGION: str = "us"
