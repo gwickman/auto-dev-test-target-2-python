@@ -8,6 +8,25 @@ auto-dev-test-target-2-python project
 uv sync
 ```
 
+## Environment Notes
+
+**PYTEST_ADDOPTS must not be set to `--no-cov`.**
+
+`--no-cov` is not a valid pytest flag. If `PYTEST_ADDOPTS=--no-cov` is set in your shell environment (e.g., inherited from another project), pytest will fail immediately with:
+
+```
+pytest: error: unrecognized arguments: --no-cov
+```
+
+To fix: clear the variable before running tests.
+
+```bash
+unset PYTEST_ADDOPTS
+uv run pytest
+```
+
+This project does not use `pytest-cov` and does not require any coverage-disabling flags. The `pyproject.toml` pytest configuration is correct as-is.
+
 ## Quality Gates
 
 Before committing, run:
