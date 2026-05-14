@@ -207,3 +207,8 @@ marimo/_lsp/
 __marimo__/
 
 nul
+
+# Test output artifacts
+full_test_output.txt
+test_output.txt
+test_run.txt
