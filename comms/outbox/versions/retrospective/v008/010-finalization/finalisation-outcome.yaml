@@ -1,0 +1,45 @@
+finalisation_outcome:
+  version_id: v008
+  version_closure_status: failed
+  intent_fulfilment: fulfilled
+  criteria_conformance: met
+  retrospective_alignment: aligned
+  evidence_confidence: high
+  source_ac_count: 5
+  verified_source_ac_count: 5
+  unverified_source_ac_ids: []
+  material_caveats:
+    - "Plan.md Missing (BLOCKING): docs/auto-dev/plan.md required per Task 010 § 3a. Project lacks version planning infrastructure. Remediation: Create plan.md at canonical path with v008 closure metadata and forward-looking roadmap."
+    - "Version-state.json Previously Missing (RESOLVED): Copied from execution folder to comms/state/version-state.json per Task 007 Finding 1 auto-approval."
+  drift_scope_status: {}
+  documentation_completeness:
+    decision: BLOCKED
+    counts:
+      PRESENT: 5
+      DISPLACED: 0
+      MISSING: 2
+      PARTIAL: 0
+      UNKNOWN: 0
+    message: "BLOCKED: Documentation completeness check identified 2 missing artifacts: (1) version-state.json (resolved by copying from execution folder), (2) docs/auto-dev/plan.md (blocking — requires creation). Per Task 010 § 5b, any MISSING artifact blocks closure."
+  outstanding_items:
+    - "Process Improvement Candidate (Task 006): Implementation Plan Format Precedence Over Existing Patterns — when explicit format examples provided in implementation plans, they diverge from existing codebase patterns. No product request filed; verify intentional (per Task 010 § 2a)."
+    - "Plan.md Gap (NFR-002/BLOCKING): Version planning document required for closure. Create docs/auto-dev/plan.md with v008 closure metadata and project roadmap."
+  ac_verdicts:
+    BL-023-AC-1: supported
+    BL-023-AC-2: supported
+    BL-023-AC-3: supported
+    BL-023-AC-4: supported
+    BL-023-AC-5: supported
+  execution_summary:
+    - "v008 executed successfully with 2 features completing in single theme (currency-constant-addition)"
+    - "Theme 1 (currency-constant-addition): 2 features, both completed, PRs #22 and #23 merged to main"
+    - "All 5 source ACs verified supported in retrospective phase at resolved ref f967ceb"
+    - "Quality gates: pytest 102/102 ✅, ruff ✅, mypy ✅"
+    - "Execution completed at 2026-05-17T08:47:58.639115+00:00"
+  closure_blockers:
+    - "docs/auto-dev/plan.md missing (Task 010 § 3a, 5b) — blocks version closure, prevents complete_version MCP call"
+  retrospective_notes: |
+    v008 is a minimal end-to-end test probe exercising the auto-dev-mcp design→execute→retrospective lifecycle
+    for validating BL-966 changes (design persist_drafts disk→disk handoff via persist_drafts.py, Task 009 model switch
+    haiku→sonnet). Single theme, 2 features, 5 source ACs (BL-023). All ACs verified supported. Quality gates pass.
+    Execution successful. Retrospective complete. Version closure blocked on missing plan.md planning document.
