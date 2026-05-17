@@ -1,0 +1,16 @@
+{
+  "version": "v008",
+  "status": "completed",
+  "execution_completed_at": "2026-05-17T08:47:58.639115+00:00",
+  "retrospective_completed_at": "2026-05-17T10:30:00Z",
+  "theme_count": 1,
+  "feature_count": 2,
+  "ac_total": 5,
+  "ac_supported": 5,
+  "ac_supported_pct": 100,
+  "ac_deferred_post_merge": 0,
+  "backlog_items_completed": 1,
+  "quality_gates_status": "all_pass",
+  "session_health_status": "data_unavailable",
+  "architecture_drift_status": "none"
+}
