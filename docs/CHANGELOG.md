@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## v008 (2026-05-17)
+
+- **BL-023:** Add DEFAULT_CURRENCY constant to constants module
+  - Add `DEFAULT_CURRENCY: str = "usd"` to `src/test_target_2/constants.py`
+  - Add `test_default_currency_value()` and `test_default_currency_type()` to `tests/test_constants.py`
+  - All quality gates pass (ruff, mypy --strict, pytest)
+
 ## [v007] - 2026-05-14
 
 ### Added
