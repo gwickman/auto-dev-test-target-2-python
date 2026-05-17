@@ -43,3 +43,11 @@ def test_default_region_value() -> None:
 
 def test_default_region_type() -> None:
     assert isinstance(constants.DEFAULT_REGION, str)
+
+
+def test_default_currency_value() -> None:
+    assert constants.DEFAULT_CURRENCY == "usd"
+
+
+def test_default_currency_type() -> None:
+    assert isinstance(constants.DEFAULT_CURRENCY, str)
